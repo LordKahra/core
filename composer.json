@@ -1,0 +1,12 @@
+{
+    "name": "kahra/core",
+    "description": "Core utilities for Kahra's projects.",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Lane Flores",
+            "email": "lordkahra@gmail.com"
+        }
+    ],
+    "require": {}
+}
