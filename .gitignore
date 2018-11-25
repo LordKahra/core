@@ -32,3 +32,4 @@ log/
 /vendor/
 
 # Project Files
+/.idea/*
