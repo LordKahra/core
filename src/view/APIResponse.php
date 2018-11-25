@@ -13,7 +13,7 @@ class APIResponse {
 
     // RAW ////
 
-    static function get($status, $code, $message, $objects = null, int $id = null) {
+    static function get($status, $code, $message, $objects = false, int $id = 0) {
         header('Content-Type: application/json');
 
         $response = array(
@@ -30,7 +30,7 @@ class APIResponse {
 
     // SUCCESS OR FAILURE ////
 
-    static function getSuccess($message, $objects=null, int $id=null) {
+    static function getSuccess($message, $objects=false, int $id=0) {
         return APIResponse::get(static::STATUS_SUCCESS, static::CODE_SUCCESS, $message, $objects, $id);
     }
 
