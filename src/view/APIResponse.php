@@ -30,7 +30,7 @@ class APIResponse {
 
     // SUCCESS OR FAILURE ////
 
-    static function getSuccess($message, $objects=false, int $id=0) {
+    static function getSuccess($message, $objects=null, int $id=null) {
         return APIResponse::get(static::STATUS_SUCCESS, static::CODE_SUCCESS, $message, $objects, $id);
     }
 
